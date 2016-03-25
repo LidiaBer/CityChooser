@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#boton{
+	width: 100px;
+	height: 100px;
+	color: blue;
+	border-radius: 50%;
+	align-items: center;
+}
