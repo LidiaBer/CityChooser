@@ -3,11 +3,91 @@
     padding: 0px;
     box-sizing: border-box;
 }
+a{
+	text-decoration: none;
+	border:2px solid lightgray;
+}
 
+
+li{
+	list-style: none;
+}
+body{
+	width: 100%;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: space-around;
+	font-family: sans-serif;
+	
+}
 #boton{
-	width: 100px;
-	height: 100px;
-	color: blue;
+	width: 120px;
+	height: 120px;
+	color: darkblue;
+	font-weight: 900;
 	border-radius: 50%;
 	align-items: center;
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+nav{
+	width: 100%;
+}
+nav>ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 95%;
+}
+
+nav>ul a{
+	width: 60px;
+	height: 35px;
+	color: brown;
+	font-weight: bolder;
+	font-size: 1.2em;
+	padding: 10px 35px;
+	border-radius: 10px;
+	background-color: rgba(245, 250, 220, 0.9);
+}
+
+nav>ul a:hover{
+	border:2px solid gray;
+	font-size: 1.5em;
+	background-color: rgb(245, 250, 220);
+	box-shadow: 5px 3px 15px;
+	padding: 15px 45px;
+}
+header{
+	width: 100%;
+	height: 100px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	background-color: darksalmon;
+}
+header input{
+	border-radius: 5px;
+	background-color: beige;
+	padding:6px 4px;
+}
+#principal{
+	width: 75%;
+}
+#login{
+	width: 20%;
+	padding: 5px 3px;
+}
+#cityAzar{
+	font-size: 4em;
+}
+#googleMaps{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
