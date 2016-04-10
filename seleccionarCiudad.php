@@ -17,5 +17,5 @@ mostrarCityAzar($ciudad);
 mostrarPais($pais);
 mostrarCityMaps($ciudad,$pais);
 mostrarRutaMaps($ciudad, $ciudad2, $ciudad3, $pais);
-
+mostrarVideos($ciudad, $pais);
 ?>
