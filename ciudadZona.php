@@ -2,8 +2,11 @@
 include_once "cabeceraAdmin.php";
 $nombre=nombreZona();
 asideCiudad();
-$datos=getCiudadesZona($nombre);
-if(count($datos)>0) {
+if (count($nombre)==0){
+	$datos=getCiudades();
 	mostrarCiudades($datos);
+}else{
+	$datos2=getCiudadesZona($nombre);
+	mostrarCiudades($datos2);
 }
 ?>

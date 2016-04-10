@@ -4,48 +4,59 @@ function insertaHtml(){
 			<html lang='en'>
 			<head>
     			<meta charset='UTF-8'>
+    			<link rel='stylesheet' href='main2.css'>
+    <link rel='stylesheet' media='screen and (max-width:400px)' href='main2_small.css'>
+    <link rel='stylesheet' media='screen and (min-width:401px) and (max-width:800px)' href='main2_medium.css'>
+    <link rel='stylesheet' media='screen and (min-width:801px)' href='main2_large.css'>
     			<title>CityChooser Administrador</title>
 			</head>
 			<body>
-			<link rel='stylesheet' href='main2.css'>
 			<nav>
 				<ul>
 					<li><a href='index.php'>Inicio</a></li>
 					<li><a href='ciudad.php'>Ciudad</a></li>
-					<li><a href='agencia.php'>Agencia</a></li>
+					<li><a href='tipo.php'>Tipo</a></li>
 					<li><a href='usuario.php'>Usuario</a></li>
+					<li><a href='opiniones.php'>Opiniones</a></li>
+					<li><a href='blog.php'>Blog</a></li>
+					<li><a href='agencia.php'>Agencia</a></li>
 				</ul>
 			</nav>";
 }
 function asideCiudad() {
 	echo "<section><aside id='asideCiudad'>";
-	echo "<a href='insertarCiudad.php'>Insertar nueva ciudad</a><br>";
+	echo "<a href='Ciudad.php'>Insertar nueva ciudad</a><br>";
 	echo "<a href='ciudadNombre.php'>Buscar ciudad por nombre</a><br>";
 	echo "<a href='ciudadPais.php'>Buscar ciudad por país</a><br>";
 	echo "<a href='ciudadZona.php'>Buscar ciudad por zona/continente</a><br>";
 	echo "</aside>";
 }
 function nombreCiudad(){
+	echo"<section id='seleccione'><h5>Escriba una ciudad</h5>";
 	echo "<form id='buscarCiudad' method='POST' action=''>
 	<input type='text' name='ciudad' placeholder='Nombre de la ciudad'>
 	<input type='submit' value='Buscar'>
 	</form>";
+	echo "</section>";
 	if(isset($_POST['ciudad'])) {
 		$ciudad=$_POST['ciudad'];
 		return $ciudad;
 	}
 }
 function nombrePais(){
+	echo"<section id='seleccione'><h5>Escriba un pa&iacute;s</h5>";
 	echo "<form id='buscarCiudad' method='POST' action=''>
-	<input type='text' name='pais' placeholder='Nombre de la zona o continente'>
+	<input type='text' name='pais' placeholder='Nombre del país'>
 	<input type='submit' value='Buscar'>
 	</form>";
+	echo "</section>";
 	if(isset($_POST['pais'])) {
 		$ciudad=$_POST['pais'];
 		return $ciudad;
 	}
 }
 function nombreZona(){
+		echo"<section id='seleccione'><h5>Seleccione una zona/continente</h5>";
 	echo "<form id='buscarCiudad' method='POST' action=''>
 	<select name='zona'>
 			<option>EUROPA</option>
@@ -58,6 +69,7 @@ function nombreZona(){
 	</select>
 	<input type='submit' value='Buscar'>
 	</form>";
+	echo "</section>";
 	if(isset($_POST['zona'])) {
 		$continente=$_POST['zona'];
 		$zona=substr($continente, 0, 3);
