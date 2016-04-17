@@ -6,6 +6,10 @@
 body{
 	font-family: sans-serif;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 li{
 	list-style: none;
@@ -14,54 +18,113 @@ a{
 	text-decoration: none;
 	color: brown;
 	font-weight: 150;
+	transition: all 0.5s;
+}
+a:hover{
+	width: 100%;
+	color: brown;
+	font-weight: bolder;
+	transition: all 0.5s;
+}
+table{
+	width: 60%;
+	align-items: center;
+	justify-content: center;
+}
+
+#ordena{
+	width: 100%;
+	align-items: center;
+	justify-content: center;
 }
 td{
 	border: 1px solid lightblue;
 	background-color: lightblue;
 	border-radius: 5px;
 	padding: 3px 5px;
+	flex-flow: row wrap;
 }
-table{
-	padding-top: 20px;
+#cancelar td{
+	font-size:1.2em;
+	align-items: center;
+	justify-content: strecht;
+	padding: 5px 5px;
+border: 1px solid lightblue;
+	background-color: lightblue;
+	border-radius: 5px;
 }
-td>th{
-	font-weight: bold;
+#cancela{
+	height: 200px;
+	padding: 50px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
 }
 nav a{
 	color: white;
-	text-shadow: 3px 3px grey;
+	text-shadow: 2px 3px 5px black;
 	font-size: 1.5em;
+	font-weight: bold;
+	transition: all 0.5s;
+}
+nav a:hover{
+	text-shadow: 2px 3px 5px grey;
+	font-size: 1.8em;
+	font-weight: 900;
+	color: black;
+	transition: all 0.2s;
 }
 nav{
 	width: 100%;
-	height: 100px;
-	background-color: darksalmon;
+	height: 60px;
+	background-color: #c60422;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	padding-top: 15px;
 }
 nav>ul{
 	width: 80%;
+	height: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding-bottom: 25px 45px;
+	padding-bottom: 25px 45px;;
 }
 nav>ul>li{
+	height: 100%;
 	flex-direction: row;
 	justify-content: space-around;
 }
-article{
-	padding-top: 20px;
-	width: 75%;
+aside>h4>a {
+	color: #c60422;
+}
+#main{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+#right article{
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-img{
-	margin-top: 80px;
+#right{
+	background-image: url(../imagenes/tierra_fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
+article{
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 h1>a{
 	margin-left: 45px;
 }
@@ -69,29 +132,42 @@ h2{
 	align-items: center;
 }
 aside{
-	padding: 35px 25px;
-	width: 23%;
+	padding: 20px 25px;
+	width: 15%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	justify-content: flex-start;
 	background-color: beige;
 }
-nav a hover{
-	color: white;
-	background-color: darksalmon;
-	padding: 45px 25px;
-	border-radius: 15px;
+aside>ul{
+	width: 100%;
 }
-section{
+aside>ul>li{
+	width: 100%;
+}
+aside a {
+	padding: 15px 0px;
+	flex-direction: column;
+}
+#corazon{
+	width: 100%;
 	display: flex;
-	flex-direction: row;
+	align-items: center;
 	justify-content: center;
 }
+#corazon>img{
+	width:35% ;
+	align-items: center;
+	justify-content: center;
+	margin-top: 150px;
+}
 #mostrarCiudades{
-	width: 80%;
+	justify-content:center;
+	align-items: center;
+	width: 100%;
 }
 #buscarCiudad{
+	width: 80%;
 	padding: 10px 20px;
 	font-size: 2em;
 	align-items: center;
@@ -103,7 +179,4 @@ section{
 	padding-top: 100px;
 	align-items: center;
 	justify-content: center;
-}
-#nuevaCiudad{
-	padding: 40px 50px;
 }

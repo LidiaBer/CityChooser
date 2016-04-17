@@ -1,10 +1,11 @@
 <?php
 include_once "cabeceraAdmin.php";
 asideCiudad();
-$nombre=nombrePais();
+$dato=$_POST['ordena'];
+$nombre=$_COOKIE['NOMBRE'];
 setcookie('NOMBRE',$nombre);
-mostrarOrdenarPais();
-$datos=getCiudadesPais($nombre);
+mostrarOrdenarNombre();
+$datos=getCiudadesNombreOrdenadas($nombre,$dato);
 if(count($datos)>0) {
 	mostrarCiudades($datos);
 }

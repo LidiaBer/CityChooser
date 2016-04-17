@@ -1,15 +1,13 @@
 <?php
 include_once "cabeceraAdmin.php";
 asideCiudad();
-$nombre=nombreZona();
+$dato=$_POST['ordena'];
+$nombre=$_COOKIE['NOMBRE'];
 setcookie('NOMBRE',$nombre);
 mostrarOrdenarZona();
-if (count($nombre)==0){
-	$datos=getCiudades();
+$datos=getCiudadesZonaOrdenadas($nombre,$dato);
+if(count($datos)>0) {
 	mostrarCiudades($datos);
-}else{
-	$datos2=getCiudadesZona($nombre);
-	mostrarCiudades($datos2);
 }
 cerrarHtml();
 ?>

@@ -6,6 +6,10 @@
 body{
 	font-family: sans-serif;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 li{
 	list-style: none;
@@ -15,44 +19,83 @@ a{
 	color: brown;
 	font-weight: 150;
 }
+a:hover{
+	color: brown;
+	font-weight: bolder;
+}
 td{
 	border: 1px solid lightblue;
 	background-color: lightblue;
 	border-radius: 5px;
 	padding: 3px 5px;
+	flex-flow: row wrap;
+	font-size: 0.7em;
 }
 table{
-	padding-top: 20px;
 	width: 60%;
 }
-td>th{
-	font-weight: bold;
+#ordena{
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+#cancelar td{
+	font-size:1em;
+	align-items: center;
+	justify-content: strecht;
+	padding: 5px 5px;
+border: 1px solid lightblue;
+	background-color: lightblue;
+	border-radius: 5px;
+}
+
+#cancela{
+	height: 200px;
+	padding: 50px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
 }
 nav a{
 	color: white;
-	text-shadow: 3px 3px grey;
-	font-size: 1em;
+	text-shadow: 2px 3px 5px black;
+	font-size: 1.2em;
+	font-weight: bold;
+	transition: all 0.5s;
+}
+nav a:hover{
+	text-shadow: 2px 3px 5px grey;
+	font-size: 1.5em;
+	font-weight: 900;
+	color: black;
+	transition: all 0.2s;
 }
 nav{
 	width: 100%;
-	height: 100px;
-	background-color: darksalmon;
+	height: 50px;
+	background-color: #c60422;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	padding: 5px;
 }
 nav>ul{
 	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding-bottom: 25px 45px;
+	padding-bottom: 25px 45px;;
 }
 nav>ul>li{
 	flex-direction: row;
 	justify-content: space-around;
 }
-
+aside>h4>a {
+	color: #c60422;
+}
 article{
 	padding-top: 20px;
 	width: 100%;
@@ -61,39 +104,59 @@ article{
 	align-items: center;
 	justify-content: center;
 }
-img{
-	margin-top: 80px;
+#corazon{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-
+#corazon>img{
+	width:35% ;
+	align-items: center;
+	justify-content: center;
+	margin-top: 120px;
+}
 h2{
 	align-items: center;
 }
 aside{
-	padding: 35px 0px;
+	padding: 15px 0px;
 	width: 100%;
+	height: 150px;
 	display: flex;
-	flex-direction: row;
+	flex-direction:column;
 	align-items: center;
 	justify-content: space-around;
 	background-color: beige;
 }
-aside>ul>li {
-	padding: 15px;
+aside a {
+	padding: 7px 3px;
+	flex-direction: column;
 }
-nav a hover{
-	color: white;
-	background-color: darksalmon;
-	padding: 45px 25px;
-	border-radius: 25px;
-}
-section{
+#main{
 	display: flex;
 	flex-direction: column;
+}
+#right{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../imagenes/tierra_fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
 }
 #mostrarCiudades{
-	width:100%;
-}
+	width: 60%;
+}	
 #buscarCiudad{
 	padding: 10px 20px;
 	font-size: 2em;
@@ -107,6 +170,6 @@ section{
 	align-items: center;
 	justify-content: center;
 }
-#nuevaCiudad{
-	padding: 40px 50px;
+#nuevaCiudad>table>td{
+	font-size: 0.8em;
 }

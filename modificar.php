@@ -6,4 +6,5 @@ $datos2=mostrarModificaCiudad($datos1);
 if($datos2>0) {
 	modificaCiudad($datos2);
 }
+cerrarHtml();
 ?>

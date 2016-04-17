@@ -19,28 +19,65 @@ a{
 	color: brown;
 	font-weight: 150;
 }
+a:hover{
+	color: brown;
+	font-weight: bolder;
+}
 td{
 	border: 1px solid lightblue;
 	background-color: lightblue;
-	border-radius: 5px;
-	padding: 3px 5px;
+	border-radius: 2px;
+	padding: 5px 1px;
+	flex-flow: row wrap;
+	font-size: 0.45em;
+	word-wrap:break-word;
 }
 table{
-	padding-top: 10px;
-	width:100%;
+	width: 60%;
 }
-td>th{
-	font-weight: bold;
+
+#ordena{
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+#cancelar td{
+	font-size:1em;
+	align-items: center;
+	justify-content: strecht;
+	padding: 5px 5px;
+border: 1px solid lightblue;
+	background-color: lightblue;
+	border-radius: 5px;
+}
+
+#cancela{
+	height: 200px;
+	padding: 50px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
 }
 nav a{
 	color: white;
-	text-shadow: 3px 3px grey;
+	text-shadow: 2px 3px 5px black;
+	font-size: 1.2em;
+	font-weight: bold;
+	transition: all 0.5s;
+}
+nav a:hover{
+	text-shadow: 2px 3px 5px grey;
 	font-size: 1.5em;
+	font-weight: 900;
+	color: black;
+	transition: all 0.2s;
 }
 nav{
 	width: 100%;
-	height: 200px;
-	background-color: darksalmon;
+	height: 150px;
+	background-color: #c60422;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -57,7 +94,6 @@ nav>ul>li a{
 	width: 100%;
 	justify-content: space-around;
 }
-
 article{
 	padding-top: 20px;
 	width: 100%;
@@ -66,51 +102,66 @@ article{
 	align-items: center;
 	justify-content: center;
 }
-img{
-	margin-top: 80px;
+#corazon{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-
+#corazon>img{
+	width:50% ;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
 h2{
 	align-items: center;
 }
 aside{
-	padding: 35px 0px;
+	padding: 15px 0px;
 	width: 100%;
+	height: 120px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
 	background-color: beige;
+	font-size: 1em;
 }
-aside>ul>li {
-	padding: 15px;
+aside a {
+	padding: 5px 3px;
 	flex-direction: column;
 }
-nav a hover{
-	color: white;
-	background-color: darksalmon;
-	padding: 45px 25px;
-	border-radius: 25px;
+aside>h4>a {
+	color: #c60422;
 }
-section{
+#main{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	
 }
-#mostrarCiudades{
-	width:100%;
-}
-#buscarCiudad{
+#right{
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../imagenes/tierra_fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	ba
+}
+
+#buscarCiudad{
+	width: 80%;
 	padding: 10px 20px;
-	font-size: 2em;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 #seleccione{
-	width: 100%;
+	width: 30%;
 	height: 40px;
 	padding-top: 100px;
 	align-items: center;

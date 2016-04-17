@@ -1,7 +1,8 @@
 <?php
-include_once "cabeceraAdmin.php";
+include_once "vista/vistaB.php";
+insertaHtmlSinNav();
+mostrarLogo();
+mostrarIniciaSesion();
+mostrarCorazon();
+cerrarHtml();
 ?>
-
-			<section>
-			<img src='../imagenes/tierra_de_corazon.jpg' width='50%' height="50%" align="center">
-			</section>
