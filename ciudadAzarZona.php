@@ -9,7 +9,6 @@ if(isset($_GET['ZONA_CONTINENTE'])) {
 }else {
 	$continente=$_COOKIE['ZONA_CONTINENTE'];
 }
-
 		Switch ($continente) {
 			case 'EUR':
 				$zona="EUROPA";
